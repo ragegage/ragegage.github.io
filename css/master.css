@@ -1,3 +1,17 @@
 body {
   text-align: center;
 }
+
+.buffalo {
+  fill: green;
+}
+
+@keyframes fill {
+  0%        {fill: #000}
+  20%       {fill: #fbcb43}
+  40%, 100% {fill: #000}
+}
+
+.buffalo {
+  animation: fill 2.5s ease infinite;
+}
