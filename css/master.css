@@ -4,10 +4,10 @@ body {
 
 @keyframes fill {
   0%        {fill: #000; transform: rotate(0deg);}
-  33%       {fill: #af0000}
-  /*50%       {transform: rotate(-180deg);}*/
-  66%       {fill: #af0000}
-  100%      {fill: #af0000; transform: rotate(-360deg);}
+  25%       {fill: #af0000}
+  50%       {fill: #000}
+  75%       {fill: #af0000}
+  100%      {fill: #000; transform: rotate(-360deg);}
 }
 
 .buffalo {
