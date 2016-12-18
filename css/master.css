@@ -2,16 +2,24 @@ body {
   text-align: center;
 }
 
-.buffalo {
-  fill: green;
-}
-
 @keyframes fill {
-  0%        {fill: #000}
-  20%       {fill: #fbcb43}
-  40%, 100% {fill: #000}
+  0%        {fill: #000; transform: rotate(0deg);}
+  33%       {fill: #af0000}
+  /*50%       {transform: rotate(-180deg);}*/
+  66%       {fill: #af0000}
+  100%      {fill: #af0000; transform: rotate(-360deg);}
 }
 
 .buffalo {
-  animation: fill 2.5s ease infinite;
+  width: 75px;
+  height: auto;
+  margin-top: calc(40vh - 38px);
+  border: 5px solid;
+  padding: 30px 15px;
+  border-radius: 150px;
+  cursor: pointer;
+}
+
+.buffalo:hover {
+  animation: fill 5s linear infinite;
 }
