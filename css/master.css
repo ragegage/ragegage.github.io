@@ -2,12 +2,24 @@ body {
   text-align: center;
 }
 
-@keyframes fill {
+/*@keyframes fill { // rotate
   0%        {fill: #000; transform: rotate(0deg);}
   25%       {fill: #af0000}
   50%       {fill: #000}
   75%       {fill: #af0000}
   100%      {fill: #000; transform: rotate(-360deg);}
+}*/
+
+@keyframes fill {
+  0%        {fill: #000; transform: rotate(0deg);}
+  20%        {fill: #000; transform: rotate(30deg);}
+  25%       {fill: #af0000}
+  40%        {fill: #000; transform: rotate(0deg);}
+  50%       {fill: #000}
+  60%        {fill: #000; transform: rotate(-30deg);}
+  75%       {fill: #af0000}
+  80%        {fill: #000; transform: rotate(0deg);}
+  100%      {fill: #000; transform: rotate(0deg);}
 }
 
 .buffalo {
