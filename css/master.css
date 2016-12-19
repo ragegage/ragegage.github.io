@@ -1,5 +1,22 @@
 body {
+  margin: 0;
   text-align: center;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+  font-size: 72px;
 }
 
 /*@keyframes fill { // rotate
@@ -22,16 +39,26 @@ body {
   100%      {fill: #000; transform: rotate(0deg);}
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .buffalo {
   width: 75px;
   height: auto;
-  margin-top: calc(40vh - 38px);
   border: 5px solid;
   padding: 30px 15px;
-  border-radius: 150px;
+  border-radius: 75px;
   cursor: pointer;
 }
 
 .buffalo:hover {
   animation: fill 5s linear infinite;
+}
+
+.more {
+  height: 50%;
 }
