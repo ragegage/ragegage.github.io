@@ -1,5 +1,5 @@
 /* reset */
-body, figure, ul {
+body, figure, ul, p {
   margin: 0;
   padding: 0;
 }
@@ -7,6 +7,8 @@ body, figure, ul {
 ul {
   list-style: none;
 }
+
+/* style */
 
 body {
   text-align: center;
@@ -20,26 +22,6 @@ h1 {
   margin: 0;
   font-family: 'Hind', sans-serif;
   font-size: 72px;
-}
-
-/*@keyframes fill { // rotate
-  0%        {fill: #000; transform: rotate(0deg);}
-  25%       {fill: #af0000}
-  50%       {fill: #000}
-  75%       {fill: #af0000}
-  100%      {fill: #000; transform: rotate(-360deg);}
-}*/
-
-@keyframes fill {
-  0%        {fill: #000; transform: rotate(0deg);}
-  20%        {fill: #000; transform: rotate(30deg);}
-  25%       {fill: #af0000}
-  40%        {fill: #000; transform: rotate(0deg);}
-  50%       {fill: #000}
-  60%        {fill: #000; transform: rotate(-30deg);}
-  75%       {fill: #af0000}
-  80%        {fill: #000; transform: rotate(0deg);}
-  100%      {fill: #000; transform: rotate(0deg);}
 }
 
 .buffalo {
@@ -96,4 +78,40 @@ ul {
 
 li {
   margin: 20px 0;
+}
+
+container, p {
+  width: 50%;
+}
+
+p {
+  padding: 20px;
+  background-color: cyan;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* animations */
+
+/*@keyframes fill { // rotate
+  0%        {fill: #000; transform: rotate(0deg);}
+  25%       {fill: #af0000}
+  50%       {fill: #000}
+  75%       {fill: #af0000}
+  100%      {fill: #000; transform: rotate(-360deg);}
+}*/
+
+@keyframes fill {
+  0%        {fill: #000; transform: rotate(0deg);}
+  20%        {fill: #000; transform: rotate(30deg);}
+  25%       {fill: #af0000}
+  40%        {fill: #000; transform: rotate(0deg);}
+  50%       {fill: #000}
+  60%        {fill: #000; transform: rotate(-30deg);}
+  75%       {fill: #af0000}
+  80%        {fill: #000; transform: rotate(0deg);}
+  100%      {fill: #000; transform: rotate(0deg);}
 }
