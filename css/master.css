@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 
+.noscroll {
+  overflow-y: hidden;
+}
+
 header {
   position: absolute;
   width: 100%;

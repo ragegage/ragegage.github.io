@@ -1,13 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementsByClassName('buffalo')[0].addEventListener('click', function() {
-    console.log('herererere')
-    const more = `<div class='more'>
-                    I build fullstack and frontend web apps
-                  </div>
-                  <div class='more'>
-                    and I like to have fun with it
-                  </div>`
-    document.getElementsByTagName('body')[0].innerHTML += more
+    // change this to toggle a class on the body which has overflow:hidden
+    document.getElementsByTagName('body')[0].removeAttribute("class")
     document.querySelector('.more').scrollIntoView({
       behavior: 'smooth'
     })
