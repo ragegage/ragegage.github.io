@@ -72,6 +72,11 @@ header {
   border-bottom: 3px solid aliceblue;
 }
 
+footer {
+  padding: 10px;
+  border-top: 3px solid aliceblue;
+}
+
 ul {
   text-transform: capitalize;
 }
@@ -80,18 +85,26 @@ li {
   margin: 20px 0;
 }
 
-container, p {
+container {
   width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 p {
   padding: 20px;
-  background-color: cyan;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.img {
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 100, 100, 0.1),
+      #f06d06
+    ), url('../gage.jpg');
+  background-size: contain;
+  background-position-y: center;
 }
 
 /* animations */
