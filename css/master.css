@@ -47,7 +47,17 @@ section {
   justify-content: space-around;
 }
 
-section:nth-child(2) {
+.intro {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 100, 100, 0.2),
+    rgba(240, 109, 6, .3)
+  );
+  /*background-size: contain;
+  background-position-y: center;*/
+}
+
+.projects {
   background-color: rgba(136, 82, 255, 0.4);
 }
 
