@@ -12,6 +12,7 @@ ul {
 
 body {
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .noscroll {
@@ -21,6 +22,7 @@ body {
 h1 {
   margin: 0;
   font-family: 'Hind', sans-serif;
+  font-family: 'Antic Slab', serif;
   font-size: 72px;
 }
 
