@@ -1,5 +1,5 @@
 /* reset */
-body, figure, ul, p {
+body, figure, ul, p, h2 {
   margin: 0;
   padding: 0;
 }
@@ -20,9 +20,7 @@ body {
 }
 
 h1 {
-  margin: 0;
-  font-family: 'Hind', sans-serif;
-  font-family: 'Antic Slab', serif;
+  font-family: 'Antic Slab', sans-serif;
   font-size: 72px;
 }
 
