@@ -129,6 +129,11 @@ container {
   justify-content: space-around;
 }
 
+container.about {
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
 .img {
   background-image: radial-gradient(
       circle,
