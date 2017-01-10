@@ -37,6 +37,17 @@ h1 {
   animation: fill 5s linear infinite;
 }
 
+/***** css for arrows - potentially have arrows pointing at buffalo
+<div class="generatecssdotcom_arrow">CLICK HERE</div><div class="generatecssdotcom_arrowpoint">Powered by: <a href="http://www.generatecss.com/">CSS Generator</a></div>
+.generatecssdotcom_arrowpoint {position:absolute;top:0;right:0;font-size:8px;color:#cccccc;}
+.generatecssdotcom_arrowpoint a {color:#cccccc;text-decoration:none;font-weight:normal;}
+.generatecssdotcom_arrowpoint a:hover {color:#cccccc;text-decoration:none;font-weight:normal;}
+.generatecssdotcom_arrow {text-align:left;font-size:24px;font-family:Helvetica;color:#000000;font-weight:bold;width:150px;height:30px;position:relative;background:#E46B00;border:0px solid #FFCC00;margin:0px 50px 0px 0px;padding:10px;}
+.generatecssdotcom_arrow:after, .generatecssdotcom_arrow:before {left:100%;top:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;}
+.generatecssdotcom_arrow:after {border-left-color:#E46B00;border-width:50px;margin-top:-50px;}
+.generatecssdotcom_arrow:before {border-left-color:#FFCC00;border-width:50px;margin-top:-50px;}
+*/
+
 section {
   height: 100%;
   min-height: 500px;
