@@ -1,5 +1,5 @@
 console.log("hello friend!");
-console.log("this is a simple site; not too much to see here");
+console.log("this is just a fun little site; not too much to see here");
 
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.visited) // if user has visited the page before, remove the usual rigamarole
