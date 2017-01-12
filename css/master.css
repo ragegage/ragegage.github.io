@@ -1,5 +1,5 @@
 /* reset */
-body, figure, ul, p, h2 {
+body, figure, ul, p, h1, h2 {
   margin: 0;
   padding: 0;
 }
@@ -25,16 +25,16 @@ h1 {
 }
 
 .buffalo {
-  width: 75px;
+  width: 100px;
   height: auto;
   border: 5px solid;
-  padding: 30px 15px;
-  border-radius: 75px;
+  padding: 35px 15px;
+  border-radius: 100px;
   cursor: pointer;
 }
 
 .buffalo:hover {
-  animation: fill 5s linear infinite;
+  animation: fill .5s linear infinite;
 }
 
 /***** css for arrows - potentially have arrows pointing at buffalo
@@ -132,7 +132,6 @@ li {
 
 container {
   width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -191,12 +190,9 @@ container.about {
 
 @keyframes fill {
   0%        {fill: #000; transform: rotate(0deg);}
-  20%        {fill: #000; transform: rotate(30deg);}
-  25%       {fill: #af0000}
-  40%        {fill: #000; transform: rotate(0deg);}
-  50%       {fill: #000}
-  60%        {fill: #000; transform: rotate(-30deg);}
-  75%       {fill: #af0000}
-  80%        {fill: #000; transform: rotate(0deg);}
+  20%        {transform: rotate(5deg);}
+  40%        {transform: rotate(0deg);}
+  50%       {fill: #7c0000}
+  60%        {transform: rotate(-5deg);}
   100%      {fill: #000; transform: rotate(0deg);}
 }
