@@ -49,8 +49,7 @@ h1 {
 */
 
 section {
-  height: 100%;
-  min-height: 500px;
+  min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -76,6 +75,7 @@ article {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 figure {
@@ -88,6 +88,7 @@ figure {
   max-width: 300px;
   width: 30%;
   box-sizing: border-box;
+  margin: 5px 0;
 }
 
 header {
@@ -139,7 +140,14 @@ container {
 
 container.about {
   box-sizing: border-box;
-  padding: 0 15px;
+}
+
+.about article {
+  min-height: 100%;
+}
+
+p {
+  padding: .25em;
 }
 
 .img {
