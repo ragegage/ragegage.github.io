@@ -91,6 +91,10 @@ figure {
   margin: 5px 0;
 }
 
+figure img {
+  width: 100%;
+}
+
 header {
   font-weight: 700;
   text-transform: uppercase;
