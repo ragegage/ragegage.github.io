@@ -34,7 +34,7 @@ h1 {
 }
 
 .buffalo:hover {
-  animation: fill .5s linear infinite;
+  animation: flash .5s linear infinite;
 }
 
 /***** css for arrows - potentially have arrows pointing at buffalo
@@ -184,19 +184,21 @@ p {
   background-position-x: center;
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
+  animation: imagebulger .2s linear infinite;
 }
 
 /* animations */
 
-/*@keyframes fill { // rotate
-  0%        {fill: #000; transform: rotate(0deg);}
-  25%       {fill: #af0000}
-  50%       {fill: #000}
-  75%       {fill: #af0000}
-  100%      {fill: #000; transform: rotate(-360deg);}
-}*/
+@keyframes imagebulger {
+  0%, 100% {
+    background-size: auto 100%, auto 100%, auto 98%;
+  }
+  50% {
+    background-size: auto 100%, auto 100%, auto 102%;
+  }
+}
 
-@keyframes fill {
+@keyframes flash {
   0%        {fill: #000; transform: rotate(0deg);}
   20%        {transform: rotate(5deg);}
   40%        {transform: rotate(0deg);}
