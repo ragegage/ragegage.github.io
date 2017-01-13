@@ -160,7 +160,7 @@ p {
       rgba(255, 100, 100, 0.1),
       #f06d06
     )
-    , url('../gage-foreground.png')
+    , url('../assets/gage-foreground.png')
     ;
 
   background-size: auto, auto 100%;
@@ -175,8 +175,8 @@ p {
       rgba(255, 100, 100, 0.1),
       #f06d06
     )
-    , url('../gage-foreground.png')
-    , url('../gage-midground.svg')
+    , url('../assets/gage-foreground.png')
+    , url('../assets/gage-midground.svg')
     ;
 
   background-size: auto 100%, auto 100%;
