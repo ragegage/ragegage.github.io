@@ -99,6 +99,7 @@ section {
   height: 100%;
   overflow: hidden;
   opacity: 0;
+  white-space: nowrap;
 
   transition: opacity 1.2s ease-out, max-width 0.6s;
 }
