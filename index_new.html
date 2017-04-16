@@ -11,7 +11,7 @@
     ga('send', 'pageview');
   </script>
 </head>
-<body class="noscroll">
+<body>
 	<section class='intro' id='intro'>
     <center>
   		<h1>Gage Newman, Web Developer</h1>
@@ -25,10 +25,10 @@
         <p>
           I build fullstack and frontend web apps,
           and I like to have fun with it.
-          I'm a web developer and coding instructor
-          living in the Bay Area.
         </p>
         <p>
+          I'm a web developer and coding instructor
+          living in the Bay Area.
           I recently attended App Academy and was hired as a full-time
           teaching assistant (TA) directly out of the program.
           As a TA, I have delivered lectures, developed new
@@ -53,7 +53,7 @@
   </section>
   <section class='projects'>
     <center>
-      <img src='https://github.com/ragegage/robinbanks/raw/master/docs/stockshow-screenshot.png' alt='robinbanks'>
+      <img src='assets/star_count.png' alt='sixteen stars'>
       <right>
         <h3>Intro to Elixir Workshop</h3>
         <h4>6-hour workshop for experienced developers</h4>
@@ -66,73 +66,38 @@
   </section>
   <section class='projects'>
     <center>
-      <img src='https://github.com/ragegage/robinbanks/raw/master/docs/stockshow-screenshot.png' alt='robinbanks'>
+      <img src='assets/robinbanks_screenshot.png' alt='robinbanks'>
       <right>
         <h3>RobinBanks</h3>
-        <h4>stock price app</h4>
-        <ul>
-          <li>Full Stack</li>
-          <li>Rails backend</li>
-          <li>React frontend</li>
-          <li>Accessed external API for data</li>
-          <li>Hand-rolled graphing plugin</li>
-        </ul>
+        <h4>Stock price visualizer built with Rails and React</h4>
+        <p>
+          Information is charted using a custom-built Chart component that renders the data onto an HTML5 Canvas element, dynamically updates when it receives new data, and provides customizeable hover functionality.
+          Wrote integration for Yahoo's deprecated Finance API; currently makes requests as a MotoE2 connecting over 4GLTE to get past the deprecation errors.
+          To allow easy reordering, watched stocks are stored as a linked list.
+        </p>
         <a href='https://github.com/ragegage/robinbanks' target='_blank'>link to github</a>
       </right>
     </center>
   </section>
   <section class='projects'>
     <center>
-      <img src="./assets/chat_screenshot.png" alt="">
+      <img src="./assets/chat_screenshot.png" alt="instant messenger">
       <right>
         <a href='https://demoelixirchatapp.herokuapp.com' target='_blank'><h3>Chat Umbrella</h3></a>
-        <h4>instant messaging app</h4>
-        <ul>
-          <li>Full Stack</li>
-          <li>Chat server written in Elixir</li>
-          <li>Phoenix backend</li>
-          <li>Vanilla JS frontend</li>
-        </ul>
+        <h4>A simple, authenticated, instant messaging app</h4>
+        <p>
+          This messaging app is an umbrella app composed of two separate projects: a chat server, and a web app with basic authentication.
+          The chat server allows new "chatrooms" to be created, storing the rooms and their messages in memory.
+          The web app uses Phoenix (especially its Channels and Presence features), Ecto (to persist user information), and Guardian (to manage user authentication).
+        </p>
         <a href='https://github.com/ragegage/chat_umbrella' target='_blank'>link to github</a>
-      </right>
-    </center>
-  </section>
-  <section class='projects'>
-    <center>
-      <img src="./assets/chezjocay_smallwidth.png" alt="">
-      <right>
-        <h3>chezjocay</h3>
-        <h4>recipe management app</h4>
-        <ul>
-          <li>Full Stack</li>
-          <li>Rails backend</li>
-          <li>React / Redux frontend</li>
-          <li>Regular user testing</li>
-        </ul>
-        <a href='https://github.com/ragegage/chezjocay' target='_blank'>link to github</a>
-      </right>
-    </center>
-  </section>
-  <section class='projects'>
-    <center>
-      <img src="./assets/astro_screenshot.png" alt="">
-      <right>
-        <h3>AstroLTD.com</logo>
-        <h4>custom portfolio site</h4>
-        <ul>
-          <li>JS and PHP</li>
-          <li>Lightweight JS</li>
-          <li>Custom styling</li>
-          <li>Embedded content</li>
-        </ul>
-        <a href='https://astroltd.com/' target='_blank'>link to site</a>
       </right>
     </center>
   </section>
   <section class='links'>
     <center>
       <a href="https://www.linkedin.com/in/gagenewman" target='_blank'>
-        <img src='https://static.licdn.com/scds/common/u/images/logos/linkedin/logo_in_nav_44x36.png' /></a>
+        <img src='assets/linkedin_logo.png' alt='linkedin' /></a>
       <a href="https://www.github.com/ragegage" target='_blank'>
         <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a>
       <a href="./assets/gage_newman.pdf" target="_blank">resume</a>

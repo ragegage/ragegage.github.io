@@ -48,6 +48,7 @@ center {
 right {
   width: 80%;
   padding: 20px;
+  padding-left: 40px;
   box-sizing: border-box;
   text-align: left;
 }
@@ -69,17 +70,16 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 22px;
+  margin: .5em 0;
 }
 
 h4 {
   font-weight: 300;
+  margin: .5em 0;
 }
 
-ul {
-  text-transform: capitalize;
-}
-
-li {
+p {
+  padding: 3px 0;
 }
 
 img {
