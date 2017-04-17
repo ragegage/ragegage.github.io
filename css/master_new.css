@@ -94,6 +94,7 @@ img {
   position: relative;
   background-color: #b6d3f0;
   padding-top: 80px;
+  padding-bottom: 60px;
   border-bottom: 8px solid #366fb3;
 }
 .projects:nth-child(0n+3) {
@@ -127,6 +128,10 @@ img {
 }
 .projects:nth-last-of-type(0n+2):after {
   content: none;
+}
+
+.projects > center > img {
+  border: 2px solid #366fb3;
 }
 
 .links center {
