@@ -1,0 +1,40 @@
+body {
+  font-family: Source Sans Pro, Helvetica, sans-serif;
+}
+
+.salary, .employees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 7px 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #ccc;
+}
+
+svg {
+  width: 600px !important;
+  height: 400px !important;
+  margin-top: -70px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #828A8B;
+  margin: 0;
+  text-align: center;
+}
