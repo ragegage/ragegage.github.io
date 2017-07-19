@@ -25,3 +25,9 @@ a {
   color: #a519a5;
   font-size: 20px;
 }
+imggroup {
+  margin: 20px;
+}
+img {
+  max-width: 250px;
+}
