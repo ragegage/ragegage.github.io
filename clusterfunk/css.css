@@ -1,33 +1,136 @@
 html, body {
   margin: 0;
+  font-family: Rubik, sans-serif;
 }
 header, section {
   display: flex;
   justify-content: center;
-  min-height: 300px;
   flex-direction: column;
   align-items: center;
-}
-nav, h1, h2 {
-  font-family: 'Kranky', cursive;
-}
-section {
-  border-top: 10px solid green;
-  background-color: #bff9bf;
 }
 ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
   color: #a519a5;
   font-size: 20px;
 }
-imggroup {
-  margin: 20px;
+
+header img {
+  width: 100%;
 }
-img {
-  max-width: 250px;
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1 {
+  font-size: 35px;
+  margin: 49px 0;
+}
+.shows {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 49px;
+}
+.show {
+  width: 400px;
+  height: 380px;
+  position: relative;
+  border: 7px solid pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+  margin: 7px;
+}
+.date {
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 120px;
+}
+.month {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 300;
+}
+.day {
+  text-transform: lowercase;
+  font-weight: 400;
+}
+.title {
+  font-size: 42px;
+  margin-top: 14px;
+  font-weight: 300;
+}
+.place {
+  font-size: 28px;
+  font-weight: 400;
+}
+.time {
+  font-size: 35px;
+  font-weight: 300;
+}
+.about {
+  font-size: 14px;
+  text-align: center;
+  margin-top: auto;
+}
+
+#photos {
+  background-color: #efefef;
+}
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.img {
+  width: 300px;
+  height: 400px;
+  padding: 7px 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 14px;
+}
+.flex {
+  font-size: 28px;
+  padding: 4px 7px;
+  display: flex;
+  align-items: center;
+}
+.flex-text {
+  font-size: 15px;
+  margin-left: 9px;
+}
+.love {
+  font-size: 28px;
+  padding: 7px;
+  line-height: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+.love-text {
+  font-size: 15px;
+  margin-left: 9px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.img img {
+  width: 300px;
+  min-height: 310px;
+  object-fit: contain;
+  background-color: #222;
 }
