@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          document.children[0].children[1].innerText += ' while'
+        }, 500)
+        setTimeout(() => {
+          document.children[0].children[1].innerText += ' John'
+        }, 1000)
+        setTimeout(() => {
+          setInterval(() => {
+            document.children[0].children[1].innerText += ' had'
+          }, 500)
+        }, 1000)
+      })
+    </script>
+  </head>
+  <body>
+    Jack
+  </body>
+</html>
