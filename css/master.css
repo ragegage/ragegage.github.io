@@ -44,7 +44,8 @@ center {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 right {
@@ -142,4 +143,14 @@ img {
 }
 .links center a {
   padding: 0 5px;
+}
+
+/* At this width I expect the sections to start wrapping */
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  center {
+    margin-top: 60px;
+  }
 }
