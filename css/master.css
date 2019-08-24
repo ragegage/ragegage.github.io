@@ -133,6 +133,9 @@ img {
   content: none;
 }
 
+.projects p {
+  white-space: pre-line;
+}
 .projects > center > img {
   border: 2px solid #366fb3;
 }
