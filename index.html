@@ -1,135 +1,412 @@
 <html>
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Roboto+Slab:300,700" rel="stylesheet">
-  <link rel="stylesheet" href="./css/master.css">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-91563916-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</head>
-<body>
-	<section class='intro' id='intro'>
-    <center>
-  		<h1>Gage Newman, Web Developer</h1>
-    </center>
-	</section>
-  <section class='about'>
-    <center>
-      <img src="./assets/asdfqwer_color.png" />
-      <right>
-        <h3>About Me</h3>
+  <head>
+    <link rel="stylesheet" href="resume.css" />
+    <title>Gage Newman | gagenewman.com</title>
+  </head>
+  <body>
+    <input type="checkbox" id="dark-mode-switch" />
+    <label for="dark-mode-switch">
+      <span id="moon">🌚</span>
+      <span id="sun">🌞</span>
+    </label>
+
+    <main>
+      <header>
+        <img src="./assets/asdfqwer_color.png" alt="Drawing of Gage" />
+        Gage Newman
+      </header>
+      <details>
+        <summary>Contact info</summary>
+        <p>anything (at) gagenewman.com</p>
+      </details>
+
+      <details>
+        <summary>Experience</summary>
+        <p class="logosContainer">
+          <img src="./resume_logos/honor_logo.png" alt="Honor logo" />
+          <img
+            src="./resume_logos/app_academy_logo.png"
+            alt="App Academy logo"
+          />
+          <img src="./resume_logos/astro_logo.png" alt="Astro logo" />
+        </p>
+      </details>
+
+      <details>
+        <summary>Interests</summary>
         <p>
-          I build fullstack and frontend web apps,
-          and I like to have fun with it.
+          Software | Energy | History<!-- | Financial independence-->
+          | Mentorship | Exploration | Parenting
         </p>
-        <p>
-          I'm a software engineer living in the Bay Area; I currently work at
-          <a href='https://joinhonor.com' target='_blank'>Honor</a>, a home care provider based in San Francisco.
-        </p>
-        <p>
-          Previously, I taught full-stack web development at App Academy, delivering lectures, developing new curricula, mentoring students, and managing student projects. I had attended App Academy and was hired as a full-time teaching assistant (TA) directly out of the program.
-        </p>
-        <p>
-          I am comfortable working in Ruby, Javascript, and Python, particularly
-          within the frameworks Rails, React, and Redux. I also love learning new things, from Django to Elixir and Phoenix.
-        </p>
-        <p>
-          Before attending App Academy,
-          I co-founded
-          <a href='https://astroltd.com/' target='_blank'>Astro Limited Picture Company</a>.
-        </p>
-      </right>
-    </center>
-  </section>
-  <section class='projects'>
-    <center>
-      <h2>Projects:</h2>
-    </center>
-  </section>
-  <section class='projects'>
-    <center>
-      <img src='assets/gratitude.png' alt='gratitude journal'>
-      <right>
-        <h3>Gratitude Journal</h3>
-        <h4>Gratitude Journal Progressive Web App</h4>
-        <p>Mobile-optimized gratitude journal, built to help you stay grateful and happy.
-          Progressive Web App: can be added to a phone's home screen.
-          Built with React using Gatsby.
-          Static assets hosted on Netlify.
-        </p>
-        <a href='http://gagenewman.com/gratitude' target='_blank'>link to app</a>
-      </right>
-    </center>
-  </section>
-  <section class='projects'>
-    <center>
-      <img src='assets/taboo.png' alt='taboo'>
-      <right>
-        <h3>Taboo</h3>
-        <h4>Taboo Progressive Web App</h4>
-        <p>Mobile-optimized game of Taboo, built for playing with friends.
-          Progressive Web App: can be added to a phone's home screen.
-          Built with React using Gatsby.
-          Static assets hosted on Netlify.
-        </p>
-        <a href='http://gagenewman.com/taboo' target='_blank'>link to app</a>
-      </right>
-    </center>
-  </section>
-  <section class='projects'>
-    <center>
-      <img src='assets/stopify_screenshot.png' alt='stopify'>
-      <right>
-        <h3>Stopify</h3>
-        <h4>MP3 Player built in Electron and Rails</h4>
-        <p>Song metadata are read from .mp3 files and loaded into a local database.
-          Title and artist information are stored, as is the path to the file.
-          Songs are played, looked up, and put into playlists (including a built-in 'currently playing' queue) using the desktop app, built with Electron.
-          File and folder structure is navigated to allow easy importing of big, nested file trees full of songs.
-        </p>
-        <a href='https://github.com/ragegage/stopify' target='_blank'>link to github</a>
-      </right>
-    </center>
-  </section>
-  <section class='projects'>
-    <center>
-      <img src='assets/star_count.png' alt='sixteen stars'>
-      <right>
-        <h3>Intro to Elixir Workshop</h3>
-        <h4>6-hour workshop for experienced developers</h4>
-        <p>This 6-hour workshop was created over about eight weeks. The workshop introduces: the basics of Elixir, management of processes and state using OTP, and building an umbrella app and using Phoenix. Each topic's coverage includes both a lecture and a problem set.
-        </p>
-        <a href='https://github.com/ragegage/elixir_lectures' target='_blank'>link to github</a>
-      </right>
-    </center>
-  </section>
-  <section class='projects'>
-    <center>
-      <img src="./assets/chat_screenshot.png" alt="instant messenger">
-      <right>
-        <h3>Chat Umbrella</h3>
-        <h4>A simple, authenticated, instant messaging app</h4>
-        <p>This messaging app is an umbrella app composed of two separate projects: a chat server, and a web app with basic authentication.
-          The chat server allows new "chatrooms" to be created, storing the rooms and their messages in memory.
-          The web app uses Phoenix (especially its Channels and Presence features), Ecto (to persist user information), and Guardian (to manage user authentication).
-        </p>
-        <a href='https://github.com/ragegage/chat_umbrella' target='_blank'>link to github</a>
-      </right>
-    </center>
-  </section>
-  <section class='links'>
-    <center>
-      <a href="https://www.linkedin.com/in/gagenewman" target='_blank'>
-        <img src='assets/linkedin_logo.png' alt='linkedin' /></a>
-      <a href="https://www.github.com/ragegage" target='_blank'>
-        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a>
-      <a href="./assets/gage_newman.pdf" target="_blank">resume</a>
-      <a href="#intro">top</a>
-    </center>
-  </section>
-</body>
+      </details>
+
+      <details>
+        <summary>Projects</summary>
+        <!-- <p>Soccer | Bicycling | Music | Snowboarding | Hiking | Paragliding</p> -->
+        <details>
+          <summary>Reading</summary>
+          <p>
+            The best books I've read recently: The moon is down (Steinbeck),
+            Wave (Deraniyagala), City of Quartz (Davis), Circe (Miller), The
+            Sellout (Beatty), The spirit catches you and you fall down
+            (Fadiman), Ohio (Markley), Travelers (Habila), The art of fielding
+            (Harbach).
+          </p>
+        </details>
+        <details>
+          <summary>Travel</summary>
+          <p>
+            Some highlights: hiking in Tromsø under the "midnight sun";
+            exploring the sun festival in Otavalo; hiking from downtown Cape
+            Town to Kirstenbosch over Table Mountain; watching the sun come up
+            over the Mediterranean from Cadaqués
+          </p>
+        </details>
+        <details>
+          <summary>Software</summary>
+          <p>
+            <a href="https://github.com/ragegage/" target="_blank">My Github</a>
+          </p>
+          <p>
+            <a href="https://markovtweeter.herokuapp.com/" target="_blank">
+              Markov Tweeter
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://github.com/ragegage/elixir_lectures"
+              target="_blank"
+            >
+              A lesson plan to learn Elixir
+            </a>
+          </p>
+        </details>
+        <details>
+          <summary>Writing</summary>
+          <details>
+            <summary>On making a website</summary>
+            <p>
+              People often ask me about making websites. Instead of trying to
+              remember and recollect my thoughts on that topic for each person
+              that asks, I’ve decided to write down what I think in one place.
+              What follows are some of the things I’ve learned over the past ten
+              years of making websites for myself and others in my career as a
+              freelancer, as part of a design studio, and as a software
+              engineer.
+            </p>
+
+            <p>First: design and inspiration.</p>
+            <p>
+              Having your own ideas is great, but unless you’d describe yourself
+              as a designer, I wouldn’t recommend designing your own website.
+              Instead, look around at websites of people that do similar things
+              to you, develop your taste by figuring out what you like and
+              dislike about their websites, and use their existing designs as a
+              template for your own website. This will make it much easier to
+              come up with a website design that is coherent, and it will also
+              make it much easier for you to communicate the specifics of the
+              website you want to your web developer (or allow you to more
+              easily build it yourself).
+            </p>
+
+            <p>Second: website structure and hosting.</p>
+            <p>
+              If you live in the modern world, or listen to podcasts, you’ve
+              heard of Squarespace and Wix. That’s great. They serve a niche in
+              website creation, but it’s probably smaller than what you might
+              think. I classify ideas for websites by two things: how often
+              they’ll be updated, and how they’ll be updated.
+            </p>
+            <p>
+              Class 1: websites that either will not be updated, or will be
+              updated in simple ways (slightly changing copy, adding new entries
+              of templated sections). For these websites, all it takes is
+              building it once and it’s pretty much set. Any updates can be done
+              by “going into the code” (gasp! It’s actually much simpler than
+              you would think) and changing words or straightforwardly copying
+              and pasting other bits. These websites can be hosted for free in
+              several places (GitHub pages, Netlify, &c.) and the only ongoing
+              cost of them is the domain name (~$9/yr).
+            </p>
+            <p>
+              Class 2: websites that will be updated in more complicated ways or
+              by people who are uncomfortable with text and prefer to use GUIs
+              (graphical user interfaces) or website builder wizards. These
+              websites might have blog posts on them, where each blog post has
+              its own semi-complicated format, or you might be regularly adding
+              pages that are more “designed”. This is where Squarespace (or Wix,
+              or Wordpress) can be more handy, as they all allow you to
+              drag-and-drop images and text into a semi-custom layout. Of
+              course, this handiness comes at a cost - these are either ~$10/mo
+              (Squarespace, Wix) or free but require server hosting at ~$5/mo
+              (Wordpress) - and they’re always trying to upsell you on themes or
+              templates or plugins.
+            </p>
+            <p>
+              Class 3: websites that will be updated in response to user input.
+              These are what people call “apps,” and they require a server and a
+              database to store and process those user actions. This server can
+              either be custom, written by software engineers that you are
+              paying (Facebook is an “app,” for example, with thousands of
+              software engineers constantly working on its design and
+              functionality), or out-of-the-box (I’d classify Shopify as an
+              “app,” where their software records and processes user
+              interactions with your site). There are ways to do this for cheap,
+              but in general building this class of website requires either a
+              lot of money or a lot of expertise, or both.
+            </p>
+
+            <p>Third: content.</p>
+            <p>
+              Content is king. If you have interesting content, then show it off
+              - write things that are interesting, display pictures that are
+              cool, or showcase engaging video content. If you want the same
+              people to visit your site over and over again (the way that people
+              check Facebook, Reddit, Instagram, TikTok, Twitter, or Substack),
+              then you’ll need to update it regularly. Getting yourself into a
+              routine where you can regularly update your website's content will
+              be important. If, however, you care more about rarer visits from
+              different people, then you won't need to update your content quite
+              so much.
+            </p>
+          </details>
+          <!-- <details>
+              <summary>Cockroaches, or life on the bottom</summary>
+              <p>
+                There are two ways to thrive in life, and as counterintuitive as
+                it sounds, one of them is to be a cockroach.
+              </p>
+              <p>
+                The obvious way to thrive is to move up the food chain - enmesh
+                yourself more in the flows of capital and human activity.
+                Accumulate more possessions, hire people and services to service
+                those expanded possessions, and finance this expansion by
+                selling more (and more valuable things) to more people.
+              </p>
+              <p>
+                But what happens when that chain breaks down? Cargo gets stuck
+                in container ships sitting off the coast. Workers lose their
+                visas due to a change in foreign policy, and the world faces a
+                shortfall of natural gas for heating. The global economy shuts
+                down at the drop of a mask. At that point, you’re left alone in
+                an oversized husk of high-maintenance possessions.
+              </p>
+              <p>
+                By reducing your needs, on the other hand, you can future-proof
+                yourself against unexpected downturns. This could be your
+                lifestyle inputs, your expenses, or your energy demand - or all
+                three. The goal in this case is to reduce the flow of energy,
+                materials, and capital out of your bubble as much as possible,
+                allowing the bubble to sustain itself with no inputs.
+              </p>
+              <p>
+                This is a common first step in many FIRE journeys: realize what
+                gives meaning to your life and prioritize that ruthlessly. This
+                allows you to redirect your newly liberated surplus into
+                investments. I’m not going to weigh in on any particular
+                investment strategies in this article - the Bogleheads say that
+                simpler is better, while the Bitcoiners preach the gospel of
+                DeFi - but I will say that capital investments are investments
+                too.
+              </p>
+              <p>
+                Improving your bubble so that it needs fewer inputs is an
+                investment. Insulating your house so that you don’t need to heat
+                and cool it so much is an investment. Installing solar panels so
+                that you can lessen your dependency on the grid is an
+                investment. Planting a garden so you can grow your own food is
+                an investment, and so is buying one nice suit that will last
+                through every wedding you go to for the rest of your life.
+              </p>
+            </details>
+            <details>
+              <summary>Cockroaches, intl. edition</summary>
+              <p>
+                The USA is different from China. The USA is different from
+                Europe.
+              </p>
+              <p>
+                All three of these countries engage in a ton of international
+                trade, but in very different ways. The broad strokes of those
+                differences starts to explain their differing strategic
+                positions.
+              </p>
+              <p>
+                The USA essentially engages with the world to consume. The image
+                you have in your head of cargo ships loaded high with plastic
+                junk and cheap clothing, headed from Guangzhou to Long Beach, is
+                directionally accurate. The USA isn’t buying the things that
+                keep the country afloat, like natural gas, or even oil, much
+                less high-tech weaponry from China; in fact, the USA isn’t
+                buying that from anyone. Thanks to the exploitation of North
+                America’s shale natural gas fields, and thanks to all of the
+                offshore drilling that keeps the seabirds dying in the Gulf of
+                Mexico and off Southern California’s coast, the USA has been
+                energy independent for a while now. The same goes for materiel
+                related to national security.
+              </p>
+              <p>
+                China engages with the world to sell. China has built thousands
+                of massive factories devoted to producing goods for external
+                markets because its internal markets aren’t fully developed
+                (read: people that live in China are too poor to spend $30 on
+                plastic Mickey Mouse ears). [in-progress]China needs to keep
+                selling abroad (mainly to the US, the only economy big enough to
+                consume its output) in order to stay afloat. If spending in the
+                US pulls back, China is in big trouble.[/in-progress]
+              </p>
+              <p>
+                [in-progress]Europe has both ends - production (esp. Germany)
+                and consumption. Plus, they’re on the Eurasian supercontinent,
+                allowing much greater linkages to form between their economies
+                and, say, Russia’s, or Africa’s, or the Middle East’s. This
+                positioning, being “in the middle of it all,” means that Europe
+                would find it much harder to withdraw from the rest of the world
+                and just trade amongst themselves, even if they wanted to. They
+                largely don’t want to, either, for reasons mostly related to
+                WWII: from their perspective, global trade ties countries
+                together and makes total war less likely. Their commitment to
+                trade, as well as their relative lack of natural resources, has
+                meant that while Europe is exporting things that other countries
+                desperately need in a way that neither the US nor China are
+                (e.g., vaccines, weapons), they are importing things that they
+                desperately need, like energy (e.g., natural gas from Russia,
+                oil from the Middle East) and defense (e.g.,
+                NATO).[/in-progress]
+              </p>
+              <p>
+                [in-progress]The USA is a cockroach, barring a worldwide nuclear
+                winter. China is desperate for the world’s (esp. the USA’s)
+                economy to keep growing so that they can continue to sell them
+                stuff. Europe must continue to trade, whether it ends up making
+                strategic sense for them or not. The USA is the cockroach in
+                this scenario, with the most resilience to a global downturn, an
+                outbreak of hostilities, or an energy crisis.[/in-progress]
+              </p>
+            </details>
+            <details>
+              <summary>Why did Britain's empire collapse</summary>
+              <p>Or, the rise of a disinterested superpower</p>
+              <p>
+                Whenever I listen to the Beatles, I have to keep reminding
+                myself that at the time of their global breakthrough, Britain
+                still had colonies all over the world. Similarly, when reading
+                histories of WWII I have to shake myself out of the classic
+                American perspective of Britain as a tiny island nation
+                underdog, undergoing an endless siege at the hands of the
+                Luftwaffe. This is a true image, but it’s just as true that this
+                was the heart, brain, and purse of the British Empire on which
+                “the sun never sets.”
+              </p>
+              <p>
+                I would argue, and I don’t think that it’s particularly
+                controversial, that WWII destroyed the British Empire. This is
+                because Germany, in rampaging through Europe, required such a
+                diversion of British forces and capital from around the world
+                that they could no longer maintain control of their colonies.
+                This is also because Japan, in rampaging through the Eastern
+                Pacific, required another massive diversion of British forces
+                and capital such that the Empire was stretched to its breaking
+                point. But I think it is mostly because during this war England
+                was supplanted as the leading global power by a country largely
+                uninterested in the rest of the world: the United States.
+              </p>
+              <p>
+                While American military buffs love the imagery of D-Day (and,
+                less popularly, Iwo Jima), most historians agree that economic
+                factors were the main determinants of the outcome. The outcome
+                of the war against Japan, for example, was predestined by the
+                relative sizes of the two countries’ economies and war engines.
+                Japanese military leadership knew that the United States would
+                likely triumph in an all-out war, simply because of its size,
+                and that was why they chose to attack Pearl Harbor without
+                warning - to try and head off American aggression.
+              </p>
+              <p>
+                The war against Germany, more interestingly, was a much more
+                equal battle between a large, heavily industrialized Germany and
+                a wealthy but small England and a large but quite poor Soviet
+                Russia. This war was really won on the Eastern Front, and the
+                American Lend-Lease program played no small part in it. From my
+                perspective, the United States essentially paid Russia to win
+                the European portion of WWII. This was done in order to avoid
+                the prospect of a united Europe dominated either by Germany or,
+                interestingly enough, by England. The United States was happy to
+                encourage a poor backwater like Soviet Russia to control half of
+                Europe, because it meant that Europe would be unable to
+                challenge the United States. The United States saw an
+                opportunity, as the only major party to the war who saw no
+                action on its own turf (Pearl Harbor excluded), to seize the
+                mantle of world hegemon.
+              </p>
+              <p>
+                What did the United States do with its newfound position?
+                Another way of asking this question, with the history of 19th
+                and 20th century colonial expansion freshly written, is: why did
+                the United States not take control of any colonies, given that
+                it was now the world’s most powerful country?
+              </p>
+              <p>
+                One answer to this is that the United States has a massive,
+                largely self-contained economy, and so it can withdraw from the
+                world’s economy without suffering any ill effects. Thus the US
+                is unlike many of the previous colonial powers like England,
+                Spain, or Japan in that it doesn’t need to reach abroad for
+                other countries to exploit. Following logically from this is the
+                suggestion that the United States’ main strategic goal is to
+                prevent blocs forming that are big enough to threaten it.
+                Frantic discussions over the years about the rise of the USSR,
+                the EU, China, India, &c. lend support to this hypothesis. This
+                would also imply that the US is not likely to develop any
+                colonies, and is in fact likely to encourage colonies to declare
+                independence from their oppressors so as to further weaken any
+                incumbent powers. This too was borne out, to a certain extent at
+                least.
+              </p>
+              <p>
+                Another, more cynical, answer is that the United States was able
+                to exploit other countries without explicitly colonializing them
+                due to its advanced economy and easy access to capital. This
+                hypothesis would suggest that the United States wouldn’t
+                withdraw from the world per se but would instead engage with the
+                world in a series of haphazard, relatively short-sighted, and
+                corporate-profit-driven actions. The many invasions,
+                stabilizations, and withdrawals of other countries that the US
+                has made seem to lend credence to this idea. This is
+                particularly so if you consider that almost all of those actions
+                were taken on behalf of potential leaders who had ties to
+                multinational corporate interests and against those who were in
+                favor of local national development.
+              </p>
+              <p>
+                So in Jordan, in India, in Libya, in Ghana, in Singapore, even
+                in Newfoundland, and finally in Hong Kong, the United Kingdom
+                eventually became too weak to resist the centripetal forces of
+                national self-determination and the claims of other countries.
+                Unlike in times past, the new world power was more than happy to
+                let the former Empire fracture into pieces without bothering to
+                pick up the pieces.
+              </p>
+              <p>The list goes on and on.</p>
+            </details> -->
+        </details>
+      </details>
+    </main>
+    todos:
+    <ul>
+      <li>edit writing</li>
+      <li>publish</li>
+    </ul>
+    <!-- analytics by goatcounter -->
+    <script
+      data-goatcounter="https://lovable-skunked-walrus.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+    <noscript>
+      <img
+        src="https://lovable-skunked-walrus.goatcounter.com/count?p=/test-noscript"
+      />
+    </noscript>
+  </body>
 </html>
