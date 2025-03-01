@@ -136,3 +136,7 @@ img {
     object-fit: scale-down;
     transition: 0.5s ease;
 }
+
+.travel img {
+    width: 100%;
+}
