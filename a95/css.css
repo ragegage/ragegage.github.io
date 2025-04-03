@@ -521,6 +521,7 @@ p {
 }
 
 .equalHMV {
+  position: relative;
   width: 250px;
   margin: 1%;
 }
