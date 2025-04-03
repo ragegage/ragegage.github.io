@@ -492,12 +492,13 @@ nav img {
 p {
   margin-bottom: 10px;
 }
+*/
+/* edited */
 
 .paddingBlock {
   padding: 20px 0;
   position: relative;
-} */
-  /* edited */
+}  
 
 .eqWrap {
   display: flex;
