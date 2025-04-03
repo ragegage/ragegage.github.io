@@ -514,11 +514,11 @@ p {
 }
 
 .eq:nth-of-type(odd) {
-  background: #706AA1;
+  background: red;
 }
 
 .eq:nth-of-type(even) {
-  background: #46bac9;
+  background: green;
 }
 
 .equalHMVWrap {
