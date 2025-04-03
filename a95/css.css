@@ -481,12 +481,12 @@ nav img {
     }
 
 /* YouTube stuff */
-* {
+/* * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   
   box-sizing: border-box;
-}
+} */
 /* edited */
 
 /* h1 {
@@ -526,7 +526,7 @@ p {
 }
 
 .equalHMV {
-  position: relative;
+  /* position: relative; */
   width: 250px;
   margin: 1%;
 }
