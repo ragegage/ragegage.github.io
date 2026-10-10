@@ -120,6 +120,11 @@ details {
     max-width: 600px;
 }
 
+.stars {
+  display: inline;
+  color: gold;
+}
+
 summary {
     font-weight: bold;
     cursor: pointer;
