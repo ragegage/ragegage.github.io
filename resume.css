@@ -81,6 +81,9 @@ input#dark-mode-switch:checked~main header img {
     filter: none;
     opacity: 0.7;
 }
+input#dark-mode-switch:checked~main header .stars {
+    color: blue;
+}
 
 @media (prefers-color-scheme: dark) {
     main {
@@ -94,6 +97,9 @@ input#dark-mode-switch:checked~main header img {
     header img {
         filter: none;
         opacity: 0.7;
+    }
+    .stars {
+        color: blue;
     }
     /* note: if a user has this set, then the input is unusable.
     hide the input in this case. */
@@ -118,6 +124,12 @@ details {
     border: 1px solid;
     border-radius: 3px;
     max-width: 600px;
+}
+
+.reading details {
+    margin: 4px auto 0px;
+    padding: 4px;
+    border: none;
 }
 
 .stars {
